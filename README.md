@@ -56,7 +56,7 @@ Elexon documents FUELHH as half-hourly generation outturn with average MW values
 
 ## Deployment guidance
 
-For Heroku, deploy the repository with the included Dockerfile. Set the web process to `uvicorn server:app --host 0.0.0.0 --port $PORT` and use `/health` as the health check. For Vercel, the checked-in `vercel.json` builds `frontend` as a Vite static project; host the FastAPI service separately and configure the frontend API base URL through a build-time environment variable. The single-container route is the simplest review deployment.
+For Heroku, deploy the repository with the included Dockerfile. Set the web process to `uvicorn server:app --host 0.0.0.0 --port $PORT` and use `/health` as the health check. For Vercel, the checked-in `vercel.json` builds `frontend` as a Vite static project and deploys the FastAPI functions under `/api/health` and `/api/overview` in the same project. The frontend defaults to same-origin API calls; set `VITE_API_BASE_URL` only when hosting the API elsewhere. The current public deployment is https://windwise-two.vercel.app/.
 
 ## AI assistance disclosure
 

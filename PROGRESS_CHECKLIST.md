@@ -23,10 +23,10 @@
 
 ## Still pending
 
-- [ ] Enable the GitHub connector in Manus so the repository can be created safely under the user’s GitHub account.
-- [ ] Create the required public anonymous GitHub repository and push this source to it.
-- [ ] Deploy the container to Heroku or deploy the frontend/backend separately to Vercel plus a Python host.
-- [ ] Configure the deployed frontend API URL and run an incognito access check.
+- [x] Enable the GitHub connector and authenticated browser access.
+- [x] Create the required public anonymous GitHub repository and upload the validated source archive plus visible documentation.
+- [x] Deploy the frontend and FastAPI functions together to Vercel at https://windwise-two.vercel.app/.
+- [x] Configure same-origin deployed API calls and verify the public homepage, `/api/health`, and `/api/overview` from an unauthenticated sandbox browser.
 - [ ] Record the customer pitch section, maximum 5 minutes.
 - [ ] Record the internal technical walkthrough section, maximum 5 minutes.
 - [ ] Upload the combined video to YouTube as unlisted.
